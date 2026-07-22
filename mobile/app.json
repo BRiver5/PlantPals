@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "PlantPals",
+    "slug": "plantpals",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "../release/creo/icon.png",
+    "scheme": "plantpals",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F7F8F9",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "../release/creo/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7F8F9"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.plantpals.app"
+    },
+    "android": {
+      "package": "com.plantpals.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#D8D9D5",
+        "foregroundImage": "../release/creo/icon.png"
+      },
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "../release/creo/icon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "icon": "../release/creo/icon.png",
+          "color": "#4FA8E0"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "PlantPals needs access to your photos so you can add a picture of your plant.",
+          "cameraPermission": "PlantPals needs access to your camera so you can take a picture of your plant."
+        }
+      ],
+      "expo-font",
+      "expo-sqlite"
+    ]
+  }
+}
