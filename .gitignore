@@ -17,6 +17,9 @@ mobile/dist-check/
 mobile/web-build/
 mobile/*.jsbundle
 
+# Release artifacts (AAB, keystore-adjacent files, store assets) — local only
+release/
+
 # Misc
 .DS_Store
 *.log
