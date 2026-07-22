@@ -50,11 +50,13 @@
         "expo-image-picker",
         {
           "photosPermission": "PlantPals needs access to your photos so you can add a picture of your plant.",
-          "cameraPermission": "PlantPals needs access to your camera so you can take a picture of your plant."
+          "cameraPermission": "PlantPals needs access to your camera so you can take a picture of your plant.",
+          "microphonePermission": false
         }
       ],
       "expo-font",
-      "expo-sqlite"
+      "expo-sqlite",
+      "./plugins/withBlockedAndroidPermissions"
     ]
   }
 }
